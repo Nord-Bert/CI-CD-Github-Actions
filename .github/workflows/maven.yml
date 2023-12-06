@@ -29,6 +29,8 @@ jobs:
         cache: maven
     - name : Test
       run: mvn verify
+    - name : make_html.sh
+      run: sh make_html.sh
     - name: Build with Maven
       run: mvn -B package --file pom.xml 
 
